@@ -7,6 +7,7 @@
   }
   .word{
     color: white;
+    display: flex;
   }
   .pic{
     width: 200px;
@@ -14,26 +15,60 @@
     border-style: double;
     border-width: 10px;
   }
+  .title{
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 0px;
+  }
+  .main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #a1afc975;
+    padding: 50px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: white;
+  }
+  .picc{
+    margin: 0 5px;
+
+  }
 
 </style>
 
 
 <html>
   <title>Winnie</title>
-  
-
-  
 
   <main>
 
-    <h2 class="word" >Winnie</h2>
-    
-    <p class="word">大家好!٩(●˙▿˙●)۶…⋆ฺ</p>
+    <h2 class="title" >Winnie</h2>
 
-    <p class="word">favorite:</p>
-    <ul class="word">cat<br><img src="https://github.com/winnie6613/winnie6613.github.io/blob/main/cat.jpg?raw=true" alt="cute cat" class="pic"></ul>
-    <ul class="word">sky<br><img src="https://github.com/winnie6613/winnie6613.github.io/blob/34a06c472989ca5b9d74e19e0f891a2966e9bc66/sky.jpg?raw=true" alt="sky" class="pic"></ul>
+    <div class=main>
+        <p class="word" >大家好!٩(●˙▿˙●)۶…⋆ฺ</p>
 
+        <p class="word">favorite:</p>
+        <divs class="word">
+          <div class="picc">
+            <div>
+              <p >cat</p>
+              <img src="https://github.com/winnie6613/winnie6613.github.io/blob/main/cat.jpg?raw=true" alt="cute cat" class="pic">
+            </div>
+          </div>
+          <div class="picc">
+            <div>
+              <p>sky</p>
+              <img src="https://github.com/winnie6613/winnie6613.github.io/blob/34a06c472989ca5b9d74e19e0f891a2966e9bc66/sky.jpg?raw=true" alt="sky" class="pic">
+            </div>
+          </div>
+          
+      </ul>
+    </div>
   </main>
 </html>
-
