@@ -1,5 +1,6 @@
 <!DOCTYPE>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 
 <style>
   body{
@@ -16,7 +17,6 @@
     border-width: 10px;
   }
   .title{
-    color: white;
     text-align: center;
     font-size: 100px;
     margin-right: 5%;
@@ -44,16 +44,30 @@
 
 
 <html>
+  <head>
+    <script>
+      $(document).ready(function() {
+        $(".title").css("color","white");
+        $("#fav").hide();
+        $("button").click(function(){
+          $("#fav").toggle(1000);
+        });
+      });
+    </script>
+  </head>
+
+
   <title>Winnie</title>
 
   <main>
 
     <h2 class="title" >Winnie</h2>
 
-    <div class=main>
-        <p class="word" >大家好!٩(●˙▿˙●)۶…⋆ฺ</p>
-
-        <p class="word">my favorite:</p>
+    <div class=main >
+        <p class="word">大家好!٩(●˙▿˙●)۶…⋆ฺ</p>
+        <button class="btn">About me??</button>
+        <div id=fav>
+          <p class="word">my favorite:</p>
         <divs class="word">
           <div class="picc">
             <div>
@@ -67,7 +81,7 @@
               <img src="https://github.com/winnie6613/winnie6613.github.io/blob/34a06c472989ca5b9d74e19e0f891a2966e9bc66/sky.jpg?raw=true" alt="sky" class="pic">
             </div>
           </div>
-          
+        </div>
       </ul>
     </div>
   </main>
